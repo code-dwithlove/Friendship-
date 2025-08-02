@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Friendship Day</title>
+  <style>
+    body {
+      background-color: #fffaf5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .card {
+      position: relative;
+      display: inline-block;
+      border: 8px solid #ffe3dc;
+      background-color: #fff;
+      border-radius: 18px;
+      padding: 1rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      background-image: url('floral-corners-friendship.png'); /* Optional decorative corner image */
+      background-repeat: no-repeat;
+      background-position: top left, bottom right;
+      background-size: 120px;
+      max-width: 320px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      display: none;
+      transition: opacity 1s ease;
+    }
+    .card .message {
+      display: none;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #5e3a2f;
+    }
+    .card button {
+      background-color: #ffded0;
+      color: #5e3a2f;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .card button:hover {
+      background-color: #ffc8b8;
+    }
+    h1 {
+      font-family: 'Brush Script MT', cursive;
+      color: #a85d48;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Friendship Day</h1>
+
+  <div class="card">
+    <!-- Replace with your image path -->
+    <img src="1.jpg" alt="Her photo" />
+    <p class="message">Forever thankful for your laughter, kindness, and the way you light up every day. 🌷 <br> <strong>I always love you, ullu. </strong></p>
+    
+    <button onclick="
+      this.style.display='none';
+      this.previousElementSibling.style.display='block';
+      this.previousElementSibling.previousElementSibling.style.display='block';
+    ">Tap to Reveal</button>
+  </div>
+
+</body>
+</html>
